@@ -19,7 +19,7 @@ const Tabella = (props: ITabella) => {
     const { state } = useNetContext();
 
 	return (
-		<TableContainer component={Paper}>
+		<TableContainer component={Paper} className={classes.main}>
 			<Table aria-label='simple table' className={classes.table}>
 				<TableHead>
 					<TableRow>

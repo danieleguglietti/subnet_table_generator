@@ -8,7 +8,8 @@ import {
 	createMuiTheme,
 	Grid,
 	makeStyles,
-	createStyles
+	createStyles,
+	Typography
 } from '@material-ui/core';
 
 const theme: Theme = createMuiTheme({
@@ -24,8 +25,24 @@ const theme: Theme = createMuiTheme({
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
 		main: {
-			display: 'flex'
-		}
+			display: 'flex',
+			justifyContent: 'center',
+			padding: '10px'
+		},
+		copy: {
+			fontSize: '.9rem'
+		},
+		a: {
+			color: '#707070',
+			textDecoration: 'none',
+			transition: 'all .2s ease-in-out',
+			'&:hover': {
+				color: 'black'
+			}
+		},
+        foo: {
+            marginTop: '75px'
+        }
 	})
 );
 
@@ -44,6 +61,15 @@ const App = () => {
 						<Form />
 						<Tabella />
 					</ProviderNet>
+					<footer className={classes.foo}>
+						<Typography className={classes.copy}>
+							Guglietti Daniele &copy; 2021. Code is aviable on{' '}
+							<a href='https://github.com/danieleguglietti/subnet_table_generator' className={classes.a}>
+								GitHub
+							</a>{' '}
+							repository.
+						</Typography>
+					</footer>
 				</Grid>
 				<Grid item md={2} />
 			</Grid>

@@ -9,12 +9,12 @@ const styles = makeStyles((theme: Theme) => createStyles({
         // padding: `0 ${theme.spacing(25)}px`
     },
     root_responsive: {
-        margin: '0',
-        flex: 1,
+        marginBottom: '30px',
+        flex: 0.8,
         display: 'flex',
         flexDirection: 'column',
-        '& > input': {
-            
+        '& > *': {
+            marginBottom: '10px',
         }
     },
     select: {
