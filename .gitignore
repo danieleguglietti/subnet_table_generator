@@ -1,0 +1,8 @@
+build/
+.firebase/
+node_modules/
+
+.firebaserc
+firebase.json
+
+pnpm-lock.yaml
